@@ -1,3 +1,11 @@
+## GitHub credentials
+Currently we are finding github credentials in two steps.
+<ol>
+<li>Find the "github:" header line</li>
+<li>Pull the github client secret out</li>
+</ol>
+In the future we will need to combine these two into one so we grep first for the presence of "github:" and then look on that same line for the secret
+
 ## AWS keys
 AWS has a rich API and sadely you may have to test a bunch of commands. List buckets might be a good start https://docs.aws.amazon.com/cli/latest/reference/s3api/list-buckets.html
 
